@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class CreateProperties < ActiveRecord::Migration[6.0]
   def change
     create_table :properties do |t|
@@ -12,7 +14,7 @@ class CreateProperties < ActiveRecord::Migration[6.0]
       t.string :msa
       t.string :submarket
       t.string :broker
-      t.int :analysis_year
+      t.integer :analysis_year
       t.decimal :asking_price
       t.decimal :price_per_unit
       t.decimal :offer_price
@@ -20,6 +22,7 @@ class CreateProperties < ActiveRecord::Migration[6.0]
       t.text :notes
       t.string :status
       t.string :fka
+      t.string :photo
 
       t.timestamps
     end
