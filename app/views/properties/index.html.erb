@@ -1,0 +1,63 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Properties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Street address</th>
+      <th>City</th>
+      <th>State</th>
+      <th>Zipcode</th>
+      <th>Unit count</th>
+      <th>Year built</th>
+      <th>Ae flood zone</th>
+      <th>Msa</th>
+      <th>Submarket</th>
+      <th>Broker</th>
+      <th>Analysis year</th>
+      <th>Asking price</th>
+      <th>Price per unit</th>
+      <th>Offer price</th>
+      <th>Sales price</th>
+      <th>Notes</th>
+      <th>Status</th>
+      <th>Fka</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @properties.each do |property| %>
+      <tr>
+        <td><%= property.name %></td>
+        <td><%= property.street_address %></td>
+        <td><%= property.city %></td>
+        <td><%= property.state %></td>
+        <td><%= property.zipcode %></td>
+        <td><%= property.unit_count %></td>
+        <td><%= property.year_built %></td>
+        <td><%= property.ae_flood_zone %></td>
+        <td><%= property.msa %></td>
+        <td><%= property.submarket %></td>
+        <td><%= property.broker %></td>
+        <td><%= property.analysis_year %></td>
+        <td><%= property.asking_price %></td>
+        <td><%= property.price_per_unit %></td>
+        <td><%= property.offer_price %></td>
+        <td><%= property.sales_price %></td>
+        <td><%= property.notes %></td>
+        <td><%= property.status %></td>
+        <td><%= property.fka %></td>
+        <td><%= link_to 'Show', property %></td>
+        <td><%= link_to 'Edit', edit_property_path(property) %></td>
+        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Property', new_property_path %>

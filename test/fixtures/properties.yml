@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  street_address: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  unit_count: 1
+  year_built: 1
+  ae_flood_zone: false
+  msa: MyString
+  submarket: MyString
+  broker: MyString
+  analysis_year: 
+  asking_price: 9.99
+  price_per_unit: 9.99
+  offer_price: 9.99
+  sales_price: 9.99
+  notes: MyText
+  status: MyString
+  fka: MyString
+
+two:
+  name: MyString
+  street_address: MyString
+  city: MyString
+  state: MyString
+  zipcode: MyString
+  unit_count: 1
+  year_built: 1
+  ae_flood_zone: false
+  msa: MyString
+  submarket: MyString
+  broker: MyString
+  analysis_year: 
+  asking_price: 9.99
+  price_per_unit: 9.99
+  offer_price: 9.99
+  sales_price: 9.99
+  notes: MyText
+  status: MyString
+  fka: MyString

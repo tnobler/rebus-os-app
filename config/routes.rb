@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :properties
   devise_for :users
   root 'pages#home'
   get 'pages/my_rebus_app'
