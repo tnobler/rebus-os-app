@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RebusAppOne</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  </head>
+
+  
+<body id="page-top">
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+  <div id="wrapper">
+    <%= render 'layouts/shared/navigations/sidebar' %>
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+    <%= render 'layouts/shared/navigations/topbar' %>        
+        <div class="container-fluid">
+          <%= yield %>
+        </div>
+      </div>
+    <%= render 'layouts/shared/footer' %>        
+    </div>
+  </div>
+    <%= render 'layouts/shared/navigations/scroll_to_top' %>        
+    <%= render 'layouts/shared/navigations/logout_modal' %>        
+  </body>
+</html>
