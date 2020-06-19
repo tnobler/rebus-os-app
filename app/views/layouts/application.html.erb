@@ -15,8 +15,9 @@
 
   
 <body id="page-top">
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
+  
+  <%= render "shared/navigation" %>
+  <%= render "shared/flash" %>
   <div id="wrapper">
     <%= render 'layouts/shared/navigations/sidebar' %>
     <div id="content-wrapper" class="d-flex flex-column">
