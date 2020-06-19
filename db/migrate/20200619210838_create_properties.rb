@@ -16,10 +16,10 @@ class CreateProperties < ActiveRecord::Migration[6.0]
       t.string :submarket
       t.string :broker
       t.integer :analysis_year
-      t.decimal :asking_price
-      t.decimal :price_per_unit
-      t.decimal :offer_price
-      t.decimal :sales_price
+      t.decimal :asking_price, precision: 14, scale: 2
+      t.decimal :price_per_unit, precision: 14, scale: 2
+      t.decimal :offer_price, precision: 14, scale: 2
+      t.decimal :sales_price, precision: 14, scale: 2
       t.text :notes
       t.string :status
       t.string :fka
