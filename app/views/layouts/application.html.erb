@@ -16,20 +16,18 @@
   
 <body id="page-top">
   
-  <%= render "shared/navigation" %>
+  
   <%= render "shared/flash" %>
-  <div id="wrapper">
-    <%= render 'layouts/shared/navigations/sidebar' %>
-    <div id="content-wrapper" class="d-flex flex-column">
-      <div id="content">
-    <%= render 'layouts/shared/navigations/topbar' %>        
+
+    <% if user_signed_in? %>
+      <%= render 'layouts/shared/admin' %>
+
+    <% end %>
         <div class="container-fluid">
           <%= yield %>
         </div>
-      </div>
-    <%= render 'layouts/shared/footer' %>        
-    </div>
-  </div>
+  
+    <%= render 'layouts/shared/footer' %>
     <%= render 'layouts/shared/navigations/scroll_to_top' %>        
     <%= render 'layouts/shared/navigations/logout_modal' %>        
   </body>

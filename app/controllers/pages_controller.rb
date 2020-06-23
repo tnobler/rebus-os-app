@@ -1,7 +1,7 @@
-class PagesController < ApplicationController
-  def home
-  end
+# frozen_string_literal: true
 
-  def my_rebus_app
-  end
+class PagesController < ApplicationController
+  def home; end
+
+  def my_rebus_app; end
 end
